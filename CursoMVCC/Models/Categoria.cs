@@ -10,7 +10,5 @@ namespace CursoMVCC.Models
         public string Descricao { get; set; }
 
 
-
-        public List<Produto> produtos { get; set; }
     }
 }

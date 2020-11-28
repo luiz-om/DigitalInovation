@@ -24,14 +24,14 @@ namespace CursoApi.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Produto>>> GetProdutos()
         {
-            return await _context.Produtos.ToListAsync();
+            return await _context.Produtos.Include(x => x.categoria).ToListAsync();
         }
 
         // GET: api/Produtos/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Produto>> GetProduto(int id)
         {
-            var produto = await _context.Produtos.FindAsync(id);
+            var produto = await _context.Produtos.Include(x => x.categoria).FirstOrDefaultAsync(x => x.Id ==id);
 
             if (produto == null)
             {
@@ -69,7 +69,6 @@ namespace CursoApi.Controllers
                     throw;
                 }
             }
-
             return NoContent();
         }
 
