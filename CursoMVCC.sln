@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30621.155
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CursoMVCC", "CursoMVCC\CursoMVCC.csproj", "{E48F23FC-6E72-41E0-B462-E5C816987600}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "teste", "teste\teste.csproj", "{C1BA660A-0145-4967-9175-956C44D2460F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CursoApi", "teste\CursoApi.csproj", "{C1BA660A-0145-4967-9175-956C44D2460F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

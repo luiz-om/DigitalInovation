@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using CursoMVCC.Models;
 
-namespace teste.Controllers
+namespace CursoApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
