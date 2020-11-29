@@ -8,11 +8,14 @@ namespace CursoMVCC.Models
 {
     public class Contexto : DbContext
     {
-        public DbSet<Categoria> Categorias { get; set; }
-        public DbSet<Produto> Produtos { get; set; }
+        public virtual DbSet<Categoria> Categorias { get; set; }
+        public virtual DbSet<Produto> Produtos { get; set; }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(connectionString: @"Data Source=DESKTOP-SVU1JRO\SQLLUIZ;Database=CursoMVCC;Integrated Security=True");
+            
+            optionsBuilder.UseSqlServer(@"Server=DESKTOP-SVU1JRO\SQLLUIZ;Database=CursoMVCC;Integrated Security=True");
+
         }
     }
 }

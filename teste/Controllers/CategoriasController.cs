@@ -85,7 +85,7 @@ namespace CursoApi.Controllers
             _context.Categorias.Add(categoria);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetCategoria", new { id = categoria.Id }, categoria);
+            return CreatedAtAction("Categorias", new { id = categoria.Id }, categoria);
         }
 
         // DELETE: api/Categorias/5
